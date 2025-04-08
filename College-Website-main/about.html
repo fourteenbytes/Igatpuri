@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dynamic Convergence University</title>
+    <link rel="icon" href="Images/college_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="home.html"><img src="Images/college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">INSTITUTE DETAILS
+            </a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="blog.html">NOTIFICATIONS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Institute Details
+      </h1>
+    </section>
+
+    <section>
+      <div class="institute-details" style="background-color: #f8f9fa; padding: 30px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); max-width: 800px; margin: 30px auto;">
+        <h3 style="text-align: center; color: #fb873f; font-size: 24px; font-weight: bold;">Institute Details</h3>
+        <div style="display: flex; flex-direction: column; gap: 15px;">
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Institute Code:</strong> 189</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">DGET / State Board Code:</strong> GR27000286</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Institute Category:</strong> GENERAL</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Count of Trade:</strong> 06</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Year of Establishment:</strong> 1995</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">GR Number:</strong> ITI-3094/(5095) VYASHI-1 DT-18 OCT-1995</p>
+          <!-- <p><strong>GR Date:</strong> 18/10/1995</p> -->
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Institute Scheme Type:</strong> ADIVASI</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Institute Type:</strong> ADIVASI</p>
+          <p style="font-size: 18px; color: #333; margin: 5px 0;"><strong style="color: #fb873f;">Gender Status:</strong> GENERAL</p>
+        </div>
+      </div>
+    </section>
+    
+
+    <!-- -----------------about us---------------------- -->
+
+    <section class="about-us">
+      <div class="row">
+        <div class="about-col">
+          <img src="Images/about_us2.jpg" alt="" />
+        </div>
+        <div class="about-col">
+          <h1>We are the best in the industry</h1>
+          <p>
+            We are a team of dedicated and passionate developers who thrive on
+            the challenge of crafting solutions that go beyond the norm,
+            sparking a revolution in what can be achieved. Our unwavering
+            commitment to innovation fuels our pursuit of excellence, enabling
+            us to unravel complexities and reimagine possibilities. Through
+            collaborative synergy and tireless exploration, we continuously
+            strive to redefine benchmarks and pave the way for a future where
+            the impossible becomes attainable.
+          </p>
+          <a href="" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ----------footer---------------- -->
+
+    <section class="footer">
+     
+    </section>
+
+    <!--Javascript for Toggle Menu-->
+    <script>
+      var navLinks = document.getElementById("navLinks");
+
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
