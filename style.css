@@ -284,9 +284,10 @@ nav .fa {
 
 .image-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   /* flex: 1;  */
   margin-right: 30px;
+
 }
 
 .image-container {
@@ -298,11 +299,18 @@ nav .fa {
 }
 
 .image-container img {
-  max-width: 400px;
-  height: 300px;
+  left: 50%;
+  max-width: 500px;
+  height: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  margin-left: 10px; /* Adds margin to the left */
+  margin-right: 10px; /* Adds margin to the right */
   flex-shrink: 0;
+}
+
+.image-container2:hover {
+  transform: scale(1.05);
 }
 
 .history {
@@ -353,14 +361,14 @@ nav .fa {
   font-size: 1.5rem;
   color: #fb873f;
   /* Section title color */
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 
 .main-title {
   font-size: 2.5rem;
   color: #333;
   /* Main title color */
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
 }
 
 .text-content p {
@@ -369,7 +377,7 @@ nav .fa {
   /* Text color */
   line-height: 1.6;
   /* Line height for readability */
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 .features {
@@ -756,10 +764,6 @@ button {
   opacity: 1;
 } */
 /* Gradient Mixin */
-.white-gradient {
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
-}
-
 /* Animation */
 @keyframes scroll {
   0% {
@@ -767,33 +771,32 @@ button {
   }
 
   100% {
-    transform: translateX(calc(-250px * 7));
-    /* Adjusted for 7 items to scroll */
+    transform: translateX(calc(-250px * 4)); /* loop for 4+ images */
   }
 }
 
-/* Slider Styling */
+/* Slider Container */
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-  height: 200px;
-  margin: auto;
-  align-items: center;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.1);
+  height: 220px;
+  margin: 40px auto;
   overflow: hidden;
   position: relative;
   width: 100%;
   max-width: 960px;
-  /* Responsive max-width */
+  border-radius: 10px;
 }
 
+/* Fading edges */
 .slider::before,
 .slider::after {
   content: "";
-  height: 100px;
   position: absolute;
-  width: 200px;
+  width: 100px;
+  height: 100%;
   z-index: 2;
-  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  background: linear-gradient(to right, #fff 0%, rgba(255, 255, 255, 0) 100%);
 }
 
 .slider::after {
@@ -807,39 +810,51 @@ button {
   top: 0;
 }
 
+/* Track Styling */
 .slide-track {
-  animation: scroll 20s linear infinite;
-  /* Adjusted animation speed */
   display: flex;
-  justify-content: flex-start;
-  /* Ensure items align to the left */
-  align-items: center;
-  /* Center items vertically */
   width: calc(250px * 14);
-  /* Adjust this for the correct number of items */
+  animation: scroll 25s linear infinite;
 }
 
+/* Pause on hover */
+.slider:hover .slide-track {
+  animation-play-state: paused;
+}
+
+/* Each Slide */
 .slide {
-  height: 100px;
+  height: 200px;
   width: 250px;
+  margin: 0 10px;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: lightgray;
-  /* Example background color for visibility */
-  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
 }
 
-.slider img {
-  height: 100%;
-  /* Ensure the image height fills the slide */
-  width: 100%;
-  /* Make the image stretch across the full width of the slide */
-  object-fit: cover;
-  /* Ensures that the image covers the slide area without distortion */
-  object-position: center;
-  /* Centers the image within the slide */
+.slide:hover {
+  transform: scale(1.05);
 }
+
+/* Images inside Slide */
+.slide img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.slide img:hover {
+  transform: scale(1.05);
+}
+
 
 
 /* ---------------facilities--------------------- */
