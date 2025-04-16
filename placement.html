@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>College Portal</title>
+  
+</head> -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; img-src 'self' data:;"> -->
+  
+    <title>GOVERNMENT ITI IGATPURI DIST NASHIK</title>
+    <!-- Owl Carousel CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+  
+    <!-- jQuery (required for Owl Carousel) -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  
+    <link rel="icon" href="Images/college_logo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&family=Poppins:wght@100;200&display=swap"
+      rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
+      rel="stylesheet" />
+      <style>
+        /* * {
+          margin: 0;
+          padding: 0;
+          box-sizing: border-box;
+          scroll-behavior: smooth;
+        }
+    
+        body {
+          font-family: 'Segoe UI', sans-serif;
+          background: #f8f9fa;
+          color: #333;
+          line-height: 1.6;
+        } */
+    
+        header {
+          /* background: #fb873f; */
+          background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
+    url("Images/background_img.jpg");
+          color: white;
+          padding: 1rem 2rem;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          flex-wrap: wrap;
+        }
+        nav{
+            height: 50%;
+        }
+    
+        nav a {
+          color: white;
+          margin-left: 20px;
+          text-decoration: none;
+          transition: color 0.3s;
+        }
+    
+        nav a:hover {
+          color: #ffe1c6;
+        }
+    
+        .section {
+          padding: 40px 20px;
+          max-width: 1200px;
+          margin: auto;
+        }
+    
+        h2 {
+          margin-bottom: 20px;
+          color: #fb873f;
+        }
+    
+        .cards {
+          display: flex;
+          gap: 20px;
+          flex-wrap: wrap;
+          margin-top: 20px;
+          justify-content: center;
+        }
+    
+        .card {
+          background: white;
+          padding: 20px;
+          border-radius: 8px;
+          flex: 1 1 200px;
+          box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+          transition: transform 0.3s;
+          text-align: center;
+        }
+    
+        .card:hover {
+          transform: translateY(-5px);
+        }
+    
+        .card img {
+          width: 100px;
+          height: auto;
+          margin-bottom: 10px;
+        }
+    
+        .timeline {
+          list-style: none;
+          padding-left: 0;
+        }
+    
+        .timeline li {
+          background: white;
+          padding: 15px 20px;
+          border-left: 4px solid #fb873f;
+          margin-bottom: 15px;
+          position: relative;
+        }
+    
+        .timeline .date {
+          font-weight: bold;
+          color: #fb873f;
+          display: block;
+          margin-bottom: 5px;
+        }
+    
+        .notifications .notif {
+          background: #fff4e6;
+          border-left: 5px solid #fb873f;
+          margin-bottom: 15px;
+          padding: 15px;
+          transition: background 0.3s;
+          cursor: pointer;
+        }
+    
+        .notifications .notif:hover {
+          background: #ffe1c6;
+        }
+    
+        .notifications .notif.expanded p {
+          font-weight: bold;
+          color: #222;
+        }
+    
+        footer {
+          text-align: center;
+          padding: 20px;
+          background: #fb873f;
+          color: white;
+          margin-top: 40px;
+        }
+      </style>
+  </head>
+<body>
+  <header>
+    <!-- <h1>ABC College</h1> -->
+    <nav>
+        <a href="blog.html"><img src="Images/college_logo.png" alt="" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">INSTITUTE DETAILS</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="placement.html">Placements</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+          
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+        
+      </nav>
+      
+  </header>
+
+  <section id="placements" class="section">
+    <h2>Top Placements</h2>
+    <div class="cards">
+      <div class="card">
+        <img src="https://logo.clearbit.com/google.com" alt="Google Logo" />
+        <p>12 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon Logo" />
+        <p>8 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/tcs.com" alt="TCS Logo" />
+        <p>25 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/google.com" alt="Google Logo" />
+        <p>12 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon Logo" />
+        <p>8 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/tcs.com" alt="TCS Logo" />
+        <p>25 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/google.com" alt="Google Logo" />
+        <p>12 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/amazon.com" alt="Amazon Logo" />
+        <p>8 students placed</p>
+      </div>
+      <div class="card">
+        <img src="https://logo.clearbit.com/tcs.com" alt="TCS Logo" />
+        <p>25 students placed</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="events" class="section">
+    <h2>Upcoming Events</h2>
+    <ul class="timeline">
+      <li>
+        <span class="date">April 25</span>
+        <p>Hackathon 2025</p>
+      </li>
+      <li>
+        <span class="date">May 10</span>
+        <p>Tech Fest</p>
+      </li>
+      <li>
+        <span class="date">June 5</span>
+        <p>Annual Day</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="notifications" class="section">
+    <h2>Latest Notifications</h2>
+    <div class="notifications">
+      <div class="notif">
+        <h4>Exam Schedule Released</h4>
+        <p>Check your department portal for details.</p>
+      </div>
+      <div class="notif">
+        <h4>OGT Latest Updates</h4>
+        <p>Apply before April 20</p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 ITI-Igatpuri </p>
+  </footer>
+
+  <script>
+    document.querySelectorAll('.notif').forEach(notif => {
+      notif.addEventListener('click', () => {
+        notif.classList.toggle('expanded');
+      });
+    });
+  </script>
+</body>
+</html>
