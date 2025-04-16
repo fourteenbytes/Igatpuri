@@ -36,10 +36,19 @@
 
 <body>
   <section class="header fade-in">
-    <nav>
-      <a href="blog.html"><img src="Images/college_logo.png" alt="" /></a>
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
+    <nav style="">
+      <div>
+      
+        <div class="logo-container" style="display: flex; justify-content: center; align-items: center; gap:5px">
+          <a href="about.html"><img src="Images/college_logo.png" alt="" style="height: 100px; width: 100px; padding: 10px;" /></a>
+  
+            <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/maha-logo.png" alt="" /></a><br>
+            <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/dget-logo.png" alt="" /></a><br>
+            <a href="about.html"><img style="height: 100px; width: 70px; filter: brightness(0) invert(1); padding: 10px;" src="Images/rajamudra.png" alt="" /></a>
+        </div>
+      <div class="nav-links" id="navLinks" style="align-items: center;">
+        
+        <i class="fa fa-times" onclick="hideMenu() "></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">INSTITUTE DETAILS</a></li>
@@ -48,6 +57,8 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
+      
+    </div>
       <i class="fa fa-bars" onclick="showMenu()"></i>
     </nav>
     <div class="text-box">
