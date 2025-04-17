@@ -170,10 +170,24 @@
 </head>
 
 <body>
-  <header>
+  <section class="sub-header">
     <!-- <h1>ABC College</h1> -->
-    <nav>
-      <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
+    <nav style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+      <!-- Hamburger Menu Icon -->
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  <div style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+      <!-- Logo and Branding -->
+      <div class="logo-container" style="margin-left: 25%;">
+        <div>
+        <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/maha-logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/dget-logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/rajamudra.png" alt="" class="invert-logo" style="height: 100px;" /></a>
+      </div>
+      </div>
+  
+      <!-- Navigation Links (Mobile Sidebar) -->
       <div class="nav-links" id="navLinks">
         <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
@@ -184,17 +198,10 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-
-      <div class="logo-container" style="display: flex;">
-        <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/maha-logo.png" alt="" /></a><br>
-        <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/dget-logo.png" alt="" /></a><br>
-        <a href="about.html"><img style="height: 100px; width: 70px; filter: brightness(0) invert(1); padding: 10px;" src="Images/rajamudra.png" alt="" /></a>
       </div>
-      <i class="fa fa-bars" onclick="showMenu()" style="align-items: left;"></i>
-
     </nav>
 
-  </header>
+  </section>
 
 <section id="placements" class="section">
     <h2>उत्तम प्लेसमेंट्स</h2>

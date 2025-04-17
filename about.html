@@ -31,8 +31,22 @@
   </head>
   <body>
     <section class="sub-header">
-      <nav>
-        <div style="display: flex; align-items: center; justify-content: center; ">
+      <nav style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+        <!-- Hamburger Menu Icon -->
+  
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    <div style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+        <!-- Logo and Branding -->
+        <div class="logo-container" style="margin-left: 25%;">
+          <div>
+          <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
+          <a href="about.html"><img src="Images/maha-logo.png" alt="" /></a>
+          <a href="about.html"><img src="Images/dget-logo.png" alt="" /></a>
+          <a href="about.html"><img src="Images/rajamudra.png" alt="" class="invert-logo" style="height: 100px;" /></a>
+        </div>
+        </div>
+    
+        <!-- Navigation Links (Mobile Sidebar) -->
         <div class="nav-links" id="navLinks">
           <i class="fa fa-times" onclick="hideMenu()"></i>
           <ul>
@@ -43,21 +57,10 @@
             <li><a href="contact.html">CONTACT</a></li>
           </ul>
         </div>
-        
-        <i class="fa fa-bars" onclick="showMenu()"></i>
-        
-        <!-- Logos in a flex row -->
-        <div class="logo-container" >
-          <a href="about.html"><img class="logo" src="Images/college_logo.png" alt="College Logo" /></a>
-
-          <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/maha-logo.png" alt="" /></a><br>
-          <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/dget-logo.png" alt="" /></a><br>
-          <a href="about.html"><img style="height: 100px; width: 70px; filter: brightness(0) invert(1); padding: 10px;" src="Images/rajamudra.png" alt="" /></a>
         </div>
-      </div>
       </nav>
       
-      <h1>Institute Details
+      <h1 style="margin-top: 100px;">Institute Details
       </h1>
     </section>
 

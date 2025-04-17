@@ -32,23 +32,30 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,200&display=swap"
     rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
 </head>
 
 <body>
-  <section class="header fade-in">
-    <nav style="">
-      <div>
-      
-        <div class="logo-container" style="display: flex; justify-content: center; align-items: center; gap:5px">
-          <a href="about.html"><img src="Images/college_logo.png" alt="" style="height: 100px; width: 100px; padding: 10px;" /></a>
+  <section class="header fade-in" ">
+    <nav style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+      <!-- Hamburger Menu Icon -->
+
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+  <div style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+      <!-- Logo and Branding -->
+      <div class="logo-container" style="margin-left: 25%;">
+        <div>
+        <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/maha-logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/dget-logo.png" alt="" /></a>
+        <a href="about.html"><img src="Images/rajamudra.png" alt="" class="invert-logo" style="height: 100px;" /></a>
+      </div>
+      </div>
   
-            <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/maha-logo.png" alt="" /></a><br>
-            <a href="about.html"><img style="height: 100px; width: 100px; padding: 10px;" src="Images/dget-logo.png" alt="" /></a><br>
-            <a href="about.html"><img style="height: 100px; width: 70px; filter: brightness(0) invert(1); padding: 10px;" src="Images/rajamudra.png" alt="" /></a>
-        </div>
-      <div class="nav-links" id="navLinks" style="align-items: center;">
-        
-        <i class="fa fa-times" onclick="hideMenu() "></i>
+      <!-- Navigation Links (Mobile Sidebar) -->
+      <div class="nav-links" id="navLinks">
+        <i class="fa fa-times" onclick="hideMenu()"></i>
         <ul>
           <li><a href="index.html">HOME</a></li>
           <li><a href="about.html">INSTITUTE DETAILS</a></li>
@@ -57,27 +64,27 @@
           <li><a href="contact.html">CONTACT</a></li>
         </ul>
       </div>
-      
-    </div>
-      <i class="fa fa-bars" onclick="showMenu()"></i>
-    </nav>
-    <div class="text-box">
-      <br>
-      <br>
-      <h2 class="clg-name">सरकारी औद्योगिक प्रशिक्षण संस्था (आदिवासी) <br> इगतपुरी, नाशिक</h2>
-      <p>
-        <strong> "शिक्षणाने भविष्य घडवा, कौशल्याने समाज बदलवा!"</strong><br>
-(Build the Future with Education, Transform Society with Skills!)
-      </p>
-      <a href="contact.html" class="read-more">Visit Us To know More</a>
-      <div style="margin-top: 10px; display: flex; flex-direction: column;">
-        <div>Email: <a href="mailto:itiigatpuri@gmail.com" style="color: white;">itiigatpuri@gmail.com</a></div>
-        <div style="margin-top: 10px;">Phone: <a href="tel:02553-244145" style="color: white; ">02553-244145</a></div>
-
       </div>
-
+    </nav>
+  
+    <!-- Main Text Section -->
+    <div class="text-box">
+      <h1 class="clg-name">
+        <span>पद्मविभूषण सुंदरलाल बहुगुणा औद्योगिक प्रशिक्षण संस्था (आदिवासी)</span><br />
+        <span>इगतपुरी, नाशिक</span>
+      </h1>
+      <p>
+        <strong>"शिक्षणाने भविष्य घडवा, कौशल्याने समाज बदलवा!"</strong><br />
+        (Build the Future with Education, Transform Society with Skills!)
+      </p>
+      <a href="contact.html" class="read-more">Visit Us To Know More</a>
+      <div class="contact-info">
+        <div>Email: <a href="mailto:itiigatpuri@gmail.com">itiigatpuri@gmail.com</a></div>
+        <div>Phone: <a href="tel:02553-244145">02553-244145</a></div>
+      </div>
     </div>
   </section>
+  
   <!-- History -->
   <section>
     <div class="introduction">
@@ -86,15 +93,15 @@
           <!-- Image Gallery Section -->
           <div class="image-container fade-in" data-wow-delay="0.1s">
             <div class="image-gallery">
-              <img class="image-container2" src="Images/sundarlal_bahuguna.jpg" alt="Sundarlal Bahuguna" >
+              <img class="image-container2" src="Images/sundarlal_bahuguna.jpg" alt="Sundarlal Bahuguna">
               <img class="image-container2" src="Images/Namantar_sohla.jpg" alt="Namantar Sohla">
               <img class="image-container2" src="Images/sanvidhan_mandir.jpg" alt="Sanvidhan Mandir">
             </div>
-            
+
             <!-- History Section -->
-      
+
           </div>
-          
+
           <!-- Features Section -->
           <div class="text-content" data-wow-delay="0.3s">
             <div class="features">
@@ -119,7 +126,7 @@
             </div>
             <a class="read-more" href="about.html">अधिक वाचा</a>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -133,7 +140,8 @@
             color: #fb873f;
             ">ट्रेंडिंग आयटीआय अभ्यासक्रम</h2>
     <div class="owl-carousel iti-custom-carousel owl-theme fade-in">
-      <div class="item active" style="background-image: url(https://scontent.fnag4-4.fna.fbcdn.net/v/t39.30808-6/480795809_1194535616014989_2325007740832333564_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ptaEYwuI5RMQ7kNvwGYGbDM&_nc_oc=Admg0nzuWjcP7u4UUyMww6LKs-oBFHt9w8CFwbDO734Ymt7X3odRMPTEeA9K8BSdVtQ&_nc_zt=23&_nc_ht=scontent.fnag4-4.fna&_nc_gid=KLiGgxqz0UVL6IkhPor5qg&oh=00_AfHC-WgGlM98BPOeEJ8tQHFpEygQEawwyTZRpFFWwU4klg&oe=6802E836);">
+      <div class="item active"
+        style="background-image: url(https://scontent.fnag4-4.fna.fbcdn.net/v/t39.30808-6/480795809_1194535616014989_2325007740832333564_n.jpg?stp=dst-jpg_s960x960_tt6&_nc_cat=103&ccb=1-7&_nc_sid=cc71e4&_nc_ohc=ptaEYwuI5RMQ7kNvwGYGbDM&_nc_oc=Admg0nzuWjcP7u4UUyMww6LKs-oBFHt9w8CFwbDO734Ymt7X3odRMPTEeA9K8BSdVtQ&_nc_zt=23&_nc_ht=scontent.fnag4-4.fna&_nc_gid=KLiGgxqz0UVL6IkhPor5qg&oh=00_AfHC-WgGlM98BPOeEJ8tQHFpEygQEawwyTZRpFFWwU4klg&oe=6802E836);">
         <div class="item-desc">
           <a href="courses.html">
             <h3 style="color: #fb873f;">COPA (कोपा)</h3>
@@ -145,7 +153,8 @@
             Installation, Ms-Office, HTML, Javascipt, Python, Cloud Computing, Cyber Security याचा समावेश आहे</p>
         </div>
       </div>
-      <div class="item" style="background-image: url(https://www.heamar.co.uk/media/amasty/blog/Welder_Tools_and_Accessories.jpg);">
+      <div class="item"
+        style="background-image: url(https://www.heamar.co.uk/media/amasty/blog/Welder_Tools_and_Accessories.jpg);">
         <div class="item-desc">
           <a href="courses.html">
             <h3 style="color: #fb873f;">Welder (वेल्डर)</h3>
@@ -156,7 +165,8 @@
             रोजगार आणि स्वयंरोजगार संधी उपलब्ध होतात.</p>
         </div>
       </div>
-      <div class="item" style="background-image: url(https://www.hobbycraft.co.uk/dw/image/v2/BHCG_PRD/on/demandware.static/-/Library-Sites-hobbycraft-uk-content/default/dwbc0d93e2/images/get-started-in/dressmaking/600x600_GSI_Dressmaking_Step2.jpg?sw=680&q=85);">
+      <div class="item"
+        style="background-image: url(https://www.hobbycraft.co.uk/dw/image/v2/BHCG_PRD/on/demandware.static/-/Library-Sites-hobbycraft-uk-content/default/dwbc0d93e2/images/get-started-in/dressmaking/600x600_GSI_Dressmaking_Step2.jpg?sw=680&q=85);">
         <div class="item-desc">
           <a href="courses.html">
             <h3 style="color: #fb873f;">Dress Making (ड्रेस मेकिंग)</h3>
@@ -166,7 +176,8 @@
             म्हणजे व्यवस्थीतरित्या वस्त्रपरिधान करणे होय.</p>
         </div>
       </div>
-      <div class="item" style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbXlEEexyGKCOhg9nlcJF3vwOVzhqFHTNIA&s);">
+      <div class="item"
+        style="background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAbXlEEexyGKCOhg9nlcJF3vwOVzhqFHTNIA&s);">
         <div class="item-desc">
           <a href="courses.html">
             <h3 style="color: #fb873f;">Motor Mechanic Vehicle (एम.एम.व्ही.)</h3>
@@ -174,10 +185,11 @@
           <p>Motor Mechanic Vehicle (एम.एम.व्ही.) या व्यवसायामध्ये प्रशिक्षणार्थ्यांना दुचाकी, चारचाकी व अन्य मोटार
             वाहने यांचे देखभाल, दुरुस्ती, इंजिन ओव्हरहॉल, ब्रेक सिस्टम, इलेक्ट्रिकल्स, गिअरबॉक्स व सस्पेन्शन यंत्रणेचे
             काम शिकवले जाते. हा कोर्स वाहन उद्योगामध्ये रोजगारासाठी एक मजबूत पाया तयार करतो.
-</p>
+          </p>
         </div>
       </div>
-      <div class="item" style="background-image: url(https://expertisetraining.in/wp-content/uploads/2023/03/mechanical-fitter.webp);">
+      <div class="item"
+        style="background-image: url(https://expertisetraining.in/wp-content/uploads/2023/03/mechanical-fitter.webp);">
         <div class="item-desc">
           <a href="courses.html">
             <h3 style="color: #fb873f;">Fitter (फिटर)</h3>
@@ -185,7 +197,7 @@
           <p>Fitter (फिटर) या व्यवसायात प्रशिक्षणार्थ्यांना विविध यांत्रिक उपकरणांची असेंब्ली, फिटिंग, मोजमाप घेणे,
             ड्रिलिंग, ग्राइंडिंग, टप्पिंग, आणि मशीन टूल्सच्या सहाय्याने कामे करणे शिकवले जाते. इंडस्ट्रियल उत्पादन
             प्रक्रियेतील महत्त्वाचा ट्रेड असून तो मोठ्या प्रमाणावर मॅन्युफॅक्चरिंग युनिट्समध्ये उपयोगात येतो.
-    </p>
+          </p>
         </div>
       </div>
       <div class="item" style="background-image: url(https://bietc.com/wp-content/uploads/2015/06/Electrician.jpg);">
@@ -196,7 +208,7 @@
           <p>Electrician (इलेक्ट्रीशियन) या व्यवसायात प्रशिक्षणार्थ्यांना घरगुती, औद्योगिक व व्यापारी विद्युत
             व्यवस्थेचे इंस्टॉलेशन, देखभाल व दुरुस्ती याचे ज्ञान दिले जाते. यात वायरिंग, सर्किट डिझाइन, इन्स्टॉलेशन ऑफ
             इलेक्ट्रिकल इक्विपमेंट्स, मोटर विंडिंग, ट्रान्सफॉर्मर ऑपरेशन, आणि सेफ्टी यांचे प्रशिक्षण दिले जाते.
-</p>
+          </p>
         </div>
       </div>
     </div>
@@ -218,40 +230,59 @@
   <!-- ---------campus------------- -->
   <section class="fade-in" style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
     <h2 style="color: #fb873f;">Our Campus</h2>
-  
+
     <div class="slider">
       <div class="slide-track">
-        <div class="slide"><p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-2.jpeg" alt="Campus 1"></p></div>
-        <div class="slide"><p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-3-e1738055157775-768x542.jpeg" alt="Campus 2"></p></div>
-        <div class="slide"><p><img src="https://itijaffarpur.delhi.gov.in/sites/default/files/lab/2.jpg" alt="Campus 3"></p></div>
-        <div class="slide"><p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit.jpeg" alt="Library"></p></div>
-        <div class="slide"><p><img src="https://kdm.privateiti.com/wp-content/uploads/2023/03/KDM-ITI-Fitter-Lab-1-768x576.jpg" alt="Playground"></p></div>
-        <div class="slide"><p><img src="https://www.rakaniti.com/images/gallery/Welder/WL%202.jpg" alt="Cafeteria"></p></div>
+        <div class="slide">
+          <p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-2.jpeg"
+              alt="Campus 1"></p>
+        </div>
+        <div class="slide">
+          <p><img
+              src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-3-e1738055157775-768x542.jpeg"
+              alt="Campus 2"></p>
+        </div>
+        <div class="slide">
+          <p><img src="https://itijaffarpur.delhi.gov.in/sites/default/files/lab/2.jpg" alt="Campus 3"></p>
+        </div>
+        <div class="slide">
+          <p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit.jpeg"
+              alt="Library"></p>
+        </div>
+        <div class="slide">
+          <p><img src="https://kdm.privateiti.com/wp-content/uploads/2023/03/KDM-ITI-Fitter-Lab-1-768x576.jpg"
+              alt="Playground"></p>
+        </div>
+        <div class="slide">
+          <p><img src="https://www.rakaniti.com/images/gallery/Welder/WL%202.jpg" alt="Cafeteria"></p>
+        </div>
         <!-- Repeat some for loop effect -->
-        <div class="slide"><p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-2.jpeg" alt="Campus 1"></p></div>
-        <div class="slide"><p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-3-e1738055157775-768x542.jpeg" alt="Campus 2"></p></div>
+        <div class="slide">
+          <p><img src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-2.jpeg"
+              alt="Campus 1"></p>
+        </div>
+        <div class="slide">
+          <p><img
+              src="https://nashik.dvet.gov.in/wp-content/uploads/sites/6/2025/01/ITI-Igatpuri-Visit-3-e1738055157775-768x542.jpeg"
+              alt="Campus 2"></p>
+        </div>
       </div>
     </div>
   </section>
-  
-
-  <!-- --------------facilities---------------- -->
-  
-  
-  <!-- ----------footer---------------- -->
 
   <section class="footer" style="background-color: #1a1a1a; color: white; padding: 50px 20px; text-align: center;">
     <h1 style="color: #fb873f; margin-bottom: 20px;">ITI Igatpuri</h1>
-    
+
     <div class="footer-intro" style="max-width: 800px; margin: auto; font-size: 16px; line-height: 1.8;">
       <p>
         औद्योगिक प्रशिक्षण संस्था, इगतपुरी ही कौशल्य विकासासाठी समर्पित एक अग्रगण्य संस्था आहे.
         <br> येथे विद्यार्थी व्यावसायिक प्रशिक्षण घेऊन उद्योगक्षम बनतात आणि स्वतःचा व्यवसाय सुरू करण्यासाठी सक्षम होतात.
       </p>
     </div>
-  
-    <div class="footer-content" style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 50px;">
-  
+
+    <div class="footer-content"
+      style="display: flex; flex-wrap: wrap; justify-content: center; margin-top: 40px; gap: 50px;">
+
       <!-- Contact Info -->
       <div class="footer-section" style="flex: 1; min-width: 250px;">
         <h3 style="color: #fb873f;">Contact Us</h3>
@@ -259,7 +290,7 @@
         <p>📞 02553-244145</p>
         <p>✉️ iti.igatpuri@dvet.edu.in</p>
       </div>
-  
+
       <!-- Quick Links -->
       <div class="footer-section" style="flex: 1; min-width: 250px;">
         <h3 style="color: #fb873f;">Quick Links</h3>
@@ -268,7 +299,7 @@
         <p><a href="courses.html" style="color: white; text-decoration: none;">Courses</a></p>
         <p><a href="contact.html" style="color: white; text-decoration: none;">Contact</a></p>
       </div>
-  
+
       <!-- Social Media -->
       <div class="footer-section" style="flex: 1; min-width: 250px;">
         <h3 style="color: #fb873f;">Follow Us</h3>
@@ -277,14 +308,14 @@
         <a href="#" class="fa fa-youtube" style="margin: 0 10px; font-size: 20px; color: white;"></a>
       </div>
     </div>
-  
+
     <hr style="border-top: 1px solid #fb873f; margin: 40px auto; width: 80%;">
-    
+
     <p style="margin-top: 20px; font-size: 14px;">
       © 2025 ITI Igatpuri | Developed & Designed with ❤️ by Team ITI Igatpuri
     </p>
   </section>
-  
+
   <!--Javascript for Toggle Menu-->
   <script>
     var navLinks = document.getElementById("navLinks");
@@ -294,7 +325,7 @@
     }
 
     function hideMenu() {
-      navLinks.style.right = "-200px";
+      navLinks.style.right = "-300px";
     }
 
     // **********************
