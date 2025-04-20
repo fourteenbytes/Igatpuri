@@ -89,7 +89,7 @@ html {
 .header {
   min-height: 100vh;
   background: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-              url("Images/background_img.jpg") center/cover no-repeat;
+              url("Images/college_background.jpg") center/cover no-repeat;
   position: relative;
   padding: 20px 15px;
   display: flex;
@@ -246,11 +246,22 @@ nav .fa {
   color: white;
   text-decoration: underline;
 }
+@media (min-width: 430px) {
+
+  .header .clg-name{
+    margin-bottom: 500px;
+    /* background-image: ; */
+  }
+
+}
 
 /* Medium Screens (Tablet and up) */
 @media (min-width: 600px) {
   .logo-container img {
     max-width: 70px;
+  }
+  .header .clg-name{
+    margin-bottom: 100px;
   }
 
   .clg-name {
@@ -275,6 +286,9 @@ nav .fa {
     justify-content: space-between;
     align-items: center;
     padding: 20px 10%;
+  }
+  .header .clg-name{
+    margin-bottom: 100px;
   }
 
   .nav-links {
@@ -3222,4 +3236,101 @@ button {
 .course-notifications.open {
   display: block;
   /* Show when open */
+}
+
+@media screen and (max-width: 768px) {
+  .course-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .enrollment-table thead {
+    display: none;
+  }
+
+  .enrollment-table, .enrollment-table tbody, .enrollment-table tr, .enrollment-table td {
+    display: block;
+    width: 100%;
+  }
+
+  .enrollment-table td {
+    text-align: left;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    padding: 8px 5px;
+  }
+
+  .enrollment-table tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+  }
+}
+
+
+.notification-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.notification-tab {
+  background-color: #fff;
+  border-left: 5px solid #007bff;
+  padding: 20px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.05);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.notification-tab:hover {
+  transform: scale(1.01);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.notification-title {
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.notification-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.notification-content {
+  margin-top: 10px;
+  display: none;
+  animation: slideDown 0.4s ease-in-out forwards;
+}
+
+.notification-tab.active .notification-content {
+  display: block;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media screen and (max-width: 600px) {
+  .notification-tab {
+    padding: 15px;
+  }
+  .notification-title {
+    font-size: 16px;
+  }
 }

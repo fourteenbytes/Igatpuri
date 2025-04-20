@@ -21,34 +21,38 @@
     rel="stylesheet" />
 </head>
 
+
 <body>
   <section class="sub-header">
-    <nav style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+    <nav
+      style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
       <!-- Hamburger Menu Icon -->
 
       <i class="fa fa-bars" onclick="showMenu()"></i>
-  <div style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
-      <!-- Logo and Branding -->
-      <div class="logo-container" style="margin-left: 25%;">
-        <div>
-        <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
-        <a href="about.html"><img src="Images/maha-logo.png" alt="" /></a>
-        <a href="about.html"><img src="Images/dget-logo.png" alt="" /></a>
-        <a href="about.html"><img src="Images/rajamudra.png" alt="" class="invert-logo" style="height: 100px;" /></a>
-      </div>
-      </div>
-  
-      <!-- Navigation Links (Mobile Sidebar) -->
-      <div class="nav-links" id="navLinks">
-        <i class="fa fa-times" onclick="hideMenu()"></i>
-        <ul>
-          <li><a href="index.html">HOME</a></li>
-          <li><a href="about.html">INSTITUTE DETAILS</a></li>
-          <li><a href="courses.html">COURSES</a></li>
-          <li><a href="placement.html">PLACEMENTS</a></li>
-          <li><a href="contact.html">CONTACT</a></li>
-        </ul>
-      </div>
+      <div
+        style=" display: flex; flex-direction: column; justify-content: space-between; gap: 10px; align-items: center;">
+        <!-- Logo and Branding -->
+        <div class="logo-container" style="margin-left: 25%;">
+          <div>
+            <a href="about.html"><img src="Images/college_logo.png" alt="" /></a>
+            <a href="about.html"><img src="Images/maha-logo.png" alt="" /></a>
+            <a href="about.html"><img src="Images/dget-logo.png" alt="" /></a>
+            <a href="about.html"><img src="Images/rajamudra.png" alt="" class="invert-logo"
+                style="height: 100px;" /></a>
+          </div>
+        </div>
+
+        <!-- Navigation Links (Mobile Sidebar) -->
+        <div class="nav-links" id="navLinks">
+          <i class="fa fa-times" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">INSTITUTE DETAILS</a></li>
+            <li><a href="courses.html">COURSES</a></li>
+            <li><a href="placement.html">PLACEMENTS</a></li>
+            <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <h1 style="margin-top: 100px;">NOTIFICATIONS</h1>
@@ -56,15 +60,44 @@
 
   <!-- ----------blog post page---------------- -->
 
-  
-        <section class="iti-courses-section">
 
-          <div class="page">
-            <h1 style="color: #fb873f;">COURSES</h1>
+  <section class="iti-courses-section">
+
+    <div class="page">
+      <h1 style="color: #fb873f;">COURSES</h1>
 
 
-            tabs
-            <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+      <div class="notification-container">
+        <div class="notification-tab" onclick="toggleNotification(this)">
+          <div class="notification-title">Infosys is hiring 2025 Batch!</div>
+          <div class="notification-date">Posted on: April 20, 2025</div>
+          <div class="notification-content">
+            <p>Infosys is offering roles in Systems Engineering for eligible students from the 2025 batch. The last date
+              to register is April 30, 2025. <a href="#">Apply here</a>.</p>
+          </div>
+        </div>
+
+        <div class="notification-tab" onclick="toggleNotification(this)">
+          <div class="notification-title">TCS NQT registrations are live</div>
+          <div class="notification-date">Posted on: April 18, 2025</div>
+          <div class="notification-content">
+            <p>TCS National Qualifier Test is open for registrations. All eligible students are encouraged to apply.
+              Exam date: May 10, 2025. <a href="#">More details</a>.</p>
+          </div>
+        </div>
+
+        <div class="notification-tab" onclick="toggleNotification(this)">
+          <div class="notification-title">Resume Review Session by Alumni</div>
+          <div class="notification-date">Posted on: April 17, 2025</div>
+          <div class="notification-content">
+            <p>Our alumni from Google and Amazon will conduct a resume workshop this Saturday. Time: 10AM – 12PM. <a
+                href="#">Register now</a>.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
               <input type="radio" name="pcss3t" checked id="tab1" class="tab-content-first">
               <label for="tab1"><i class="fa fa-laptop"></i>COPA</label>
 
@@ -316,92 +349,61 @@
                   </div>
                 </li>
               </ul>
-            </div>
+            </div> -->
 
-          </div>
-        </section>
+    </div>
+  </section>
 
 
-        <section class="blog-content">
-          <div class="row">
-            <div class="blog-left">
-              <img src="Images/certificate.jpg" alt="" />
-              <h1>About Our Certificate Programs for 2023</h1>
-              <p>
-                Welcome to the distinguished Certificate Program at DCU Engineering
-                College! This all-encompassing educational journey is meticulously
-                designed for driven individuals with a passion for engineering,
-                aiming to amplify their skill set and understanding in the
-                ever-evolving realm of engineering. Our program is meticulously
-                curated to offer an array of benefits, catering to the needs of
-                aspiring engineers.
-                <br />
-                <br />
-                At the heart of our program lies a faculty composed of seasoned
-                experts, each dedicated to nurturing your growth. This expertise is
-                coupled with a curriculum that is not just forward-looking, but at
-                the forefront of technological advancements. With a focus on
-                practicality, hands-on projects constitute a pivotal component of
-                your learning experience, ensuring you are adept at applying
-                theoretical concepts in real-world scenarios.
-                <br />
-                <br />
-                In recognition of the symbiotic relationship between academia and
-                industry, we've forged collaborations with prominent industry names.
-                This translates into opportunities for you to gain insights directly
-                from professionals and to work on industry-aligned projects. Our
-                state-of-the-art facilities provide the perfect canvas for you to
-                turn your ideas into tangible innovations.
-                <br />
-                <br />
-                We wholeheartedly invite you to join us at DCU Engineering College
-                and become an integral part of shaping your own engineering future.
-              </p>
-      
-              <div class="comment-box">
-                <h3>Leave a comment</h3>
-                <form class="comment-form" id="comment-form">
-                  <input type="text" name="name" placeholder="Enter Name" required />
-                  <input type="email" name="email" placeholder="Enter Email" required />
-                  <textarea name="message" placeholder="Enter Comment" rows="5" required></textarea>
-                  <button type="submit" class="hero-btn red-btn">Post Comment</button>
-                </form>
-              </div>
-      
-              <script>
-                document.getElementById('comment-form').addEventListener('submit', function (event) {
-                  event.preventDefault();
-      
-                  // Collect form data
-                  const formData = new FormData(this);
-      
-                  // Send form data using AJAX
-                  const xhr = new XMLHttpRequest();
-                  xhr.open('POST', 'form_handler.php', true);
-                  xhr.onreadystatechange = function () {
-                    if (xhr.readyState === XMLHttpRequest.DONE) {
-                      if (xhr.status === 200) {
-                        alert('Comment posted successfully!');
-                        // You can update the UI as needed here
-                      } else {
-                        alert('Error posting comment.');
-                      }
-                    }
-                  };
-                  xhr.send(formData);
-                });
-              </script>
-      
-        <!--Javascript for Toggle Menu-->
+  <section class="blog-content">
+    <div class="row">
+      <div class="blog-left">
+        <img src="Images/certificate.jpg" alt="" />
+        <h1>About Our Certificate Programs for 2023</h1>
+        <p>
+          Welcome to the distinguished Certificate Program at DCU Engineering
+          College! This all-encompassing educational journey is meticulously
+          designed for driven individuals with a passion for engineering,
+          aiming to amplify their skill set and understanding in the
+          ever-evolving realm of engineering. Our program is meticulously
+          curated to offer an array of benefits, catering to the needs of
+          aspiring engineers.
+          <br />
+          <br />
+          At the heart of our program lies a faculty composed of seasoned
+          experts, each dedicated to nurturing your growth. This expertise is
+          coupled with a curriculum that is not just forward-looking, but at
+          the forefront of technological advancements. With a focus on
+          practicality, hands-on projects constitute a pivotal component of
+          your learning experience, ensuring you are adept at applying
+          theoretical concepts in real-world scenarios.
+          <br />
+          <br />
+          In recognition of the symbiotic relationship between academia and
+          industry, we've forged collaborations with prominent industry names.
+          This translates into opportunities for you to gain insights directly
+          from professionals and to work on industry-aligned projects. Our
+          state-of-the-art facilities provide the perfect canvas for you to
+          turn your ideas into tangible innovations.
+          <br />
+          <br />
+          We wholeheartedly invite you to join us at DCU Engineering College
+          and become an integral part of shaping your own engineering future.
+        </p>
+
+        <div class="comment-box">
+          <h3>Leave a comment</h3>
+          <form class="comment-form" id="comment-form">
+            <input type="text" name="name" placeholder="Enter Name" required />
+            <input type="email" name="email" placeholder="Enter Email" required />
+            <textarea name="message" placeholder="Enter Comment" rows="5" required></textarea>
+            <button type="submit" class="hero-btn red-btn">Post Comment</button>
+          </form>
+        </div>
+
         <script>
-          var navLinks = document.getElementById("navLinks");
-
-          function showMenu() {
-            navLinks.style.right = "0";
-          }
-
-          function hideMenu() {
-            navLinks.style.right = "-200px";
+          function toggleNotification(tab) {
+            tab.classList.toggle("active");
           }
         </script>
 </body>
