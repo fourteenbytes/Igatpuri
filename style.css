@@ -87,7 +87,7 @@
   width: 100vw; /* Make each image full screen width */
   height: 100%;
   flex-shrink: 0;
-  object-fit: cover;
+  object-fit: contain;
 }
 
 @keyframes scroll {
