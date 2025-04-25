@@ -85,6 +85,7 @@
 
 .image-container2 {
   width: 100vw; /* Make each image full screen width */
+  height: 100%;
   flex-shrink: 0;
   object-fit: cover;
 }
