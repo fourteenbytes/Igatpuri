@@ -1112,9 +1112,11 @@ button {
 .sub-header {
   height: 50vh;
   width: 100%;
-  background-image: linear-gradient(rgba(4, 9, 30, 0.7), rgba(4, 9, 30, 0.7)),
-    url(Images/about_us.jpg);
+  background-image: linear-gradient(rgba(89, 91, 97, 0), rgba(66, 67, 75, 0.362)),
+    url(Images/copa3.jpg);
   background-position: auto;
+  background-position: 50% 62%; /* Default is center, center */
+
   background-size: cover;
   text-align: center;
 }
